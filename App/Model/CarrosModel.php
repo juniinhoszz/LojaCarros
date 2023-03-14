@@ -33,6 +33,22 @@ class CarrosModel extends Model
         $this->rows = $dao->select();
     }
 
+    public function getAllRowsMarca()
+    {
+
+        $dao = new CarrosDAO();
+
+        $this->rowsMarca = $dao->selectMarca();
+    }
+
+    public function getAllRowsFabr()
+    {
+
+        $dao = new CarrosDAO();
+
+        $this->rowsFabr = $dao->selectFabr();
+    }
+
 
      /**
      * Método que encapsula o acesso ao método selectById da camada DAO

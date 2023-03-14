@@ -69,6 +69,26 @@ class CarrosDAO extends DAO
         return $stmt->fetchAll();
     }
 
+    public function selectMarca()
+    {
+        $sql = "SELECT * FROM marca ";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->execute();
+
+        return $stmt->fetchAll();
+    }
+
+    public function selectFabr()
+    {
+        $sql = "SELECT * FROM fabricante ";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->execute();
+
+        return $stmt->fetchAll();
+    }
+
 
     public function update(CarrosModel $model)
     {

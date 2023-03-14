@@ -18,7 +18,7 @@ USE `LojaCarros` ;
 -- Table `LojaCarros`.`veiculo`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `LojaCarros`.`veiculo` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `id_marca` INT NOT NULL,
   `modelo` VARCHAR(45) NOT NULL,
   `id_fabricante` INT NOT NULL,
@@ -43,7 +43,7 @@ ENGINE = InnoDB;
 -- Table `LojaCarros`.`fabricante`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `LojaCarros`.`fabricante` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -53,7 +53,7 @@ ENGINE = InnoDB;
 -- Table `LojaCarros`.`marca`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `LojaCarros`.`marca` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -63,7 +63,7 @@ ENGINE = InnoDB;
 -- Table `LojaCarros`.`tipo`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `LojaCarros`.`tipo` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -73,7 +73,7 @@ ENGINE = InnoDB;
 -- Table `LojaCarros`.`combustivel`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `LojaCarros`.`combustivel` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
