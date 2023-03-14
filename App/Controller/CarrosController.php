@@ -27,6 +27,12 @@ class CarrosController extends Controller
         if(isset($_GET['id'])) // Verificando se existe uma variável $_GET
             $model = $model->getById( (int) $_GET['id']); // Typecast e obtendo o model preenchido vindo da DAO.
             // Para saber mais sobre Typecast, leia: https://tiago.blog.br/type-cast-ou-conversao-de-tipos-do-php-isso-pode-te-ajudar-muito/
+        
+        $model->getAllRowsMarca();
+        $model->getAllRowsFabr();
+        $model->getAllRowsTipo();
+        $model->getAllRowsComb();
+        
 
 
         include 'View/modules/Carros/FormCarros.php';

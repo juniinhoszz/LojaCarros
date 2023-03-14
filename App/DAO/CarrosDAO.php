@@ -76,17 +76,37 @@ class CarrosDAO extends DAO
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();
 
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
 
     public function selectFabr()
     {
-        $sql = "SELECT * FROM fabricante ";
+        $sql = "SELECT * FROM fabricante";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();
 
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+    }
+    
+    public function selectComb()
+    {
+        $sql = "SELECT * FROM combustivel";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+    }
+
+    public function selectTipo()
+    {
+        $sql = "SELECT * FROM tipo";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
 
 

@@ -39,6 +39,7 @@ class CarrosModel extends Model
         $dao = new CarrosDAO();
 
         $this->rowsMarca = $dao->selectMarca();
+        return $this->rowsMarca;
     }
 
     public function getAllRowsFabr()
@@ -48,6 +49,23 @@ class CarrosModel extends Model
 
         $this->rowsFabr = $dao->selectFabr();
     }
+
+    public function getAllRowsComb()
+    {
+
+        $dao = new CarrosDAO();
+
+        $this->rowsComb = $dao->selectComb();
+    }
+
+    public function getAllRowsTipo()
+    {
+
+        $dao = new CarrosDAO();
+
+        $this->rowsTipo = $dao->selectTipo();
+    }
+    
 
 
      /**
