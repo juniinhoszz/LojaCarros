@@ -21,7 +21,7 @@ class CarrosDAO extends DAO
     {
         // Trecho de código SQL com marcadores ? para substituição posterior, no prepare   
         $sql = "INSERT INTO veiculo 
-                (id_marca, modelo, id_fabricante, id_tipo, ano, id_combustivel, cor, numero_chassi
+                (id_marca, modelo, id_fabricante, id_tipo, ano, id_combustivel, cor, numero_chassi,
                 kilometragem, revisao, sinistro, roubo_furto, aluguel, venda, particular, observacoes) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         

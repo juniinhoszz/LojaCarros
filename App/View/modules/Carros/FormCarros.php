@@ -17,10 +17,11 @@
         <fieldset >
             <legend style="color: white;"><b>Cadastro de Carros</b></legend>
             
+            
             <label for="id" style="color: white;">ID do veiculo:</label>
             <input type="text" for="id" disabled value="<?= $model->id ?>" name="id" />
 
-            <label for="nome" style="color: white;">Marca:</label>
+            <label for="marca" style="color: white;">Marca:</label>
             <select name="marca" id="marca" style="background:#484d50; color:white; height:25px;">
             <option selected value="">Selecione uma Opção</option>
             <?php foreach($model->rowsMarca as $item): ?>
@@ -54,7 +55,7 @@
             </select><br>
             
             <label for="ano" style="color: white;">Ano:</label>
-            <input type="text" for="ano" value="<?= $model->ano ?>" name="ano" />
+            <input type="number" min="1950" for="ano" value="<?= $model->ano ?>" name="ano" />
             
             <label for="combustivel" style="color: white;">Combustivel:</label>
             <select name="combustivel" id="combustivel" style="background:#484d50; color:white; height:25px;">
@@ -73,28 +74,54 @@
             <input type="text" for="numero_chassi" value="<?= $model->numero_chassi ?>" name="numero_chassi" />
 
             <label for="kilometragem" style="color: white;">Kilometragem:</label>
-            <input type="text" for="kilometragem" value="<?= $model->kilometragem ?>" name="kilometragem" /><br>
+            <input type="number" for="kilometragem" value="<?= $model->kilometragem ?>" name="kilometragem" /><br>
 
+            
             
             
             <div style="display: flex;">
             
-            <input type="checkbox" for="revisao" value="<?= $model->revisao ?>" id="revisao" name="revisao">
-            <label for="revisao" style="color: white;" >Revisão</label>
+            <input type="checkbox" for="revisao" value="<?= $model->revisao ?>" id="revisao" name="revisao" >
+            <label for="revisao" style="color: white;margin-right:  5px;" >Revisão</label>
 
+            <input type="checkbox" for="sinistro" value="<?= $model->sinistro ?>" id="sinistro" name="sinistro">
+            <label for="sinistro" style="color: white; margin-right:  5px;" >Sinistro</label>
+
+            <input type="checkbox" for="roubo_furto" value="<?= $model->roubo_furto ?>" id="roubo_furto" name="roubo_furto">
+            <label for="roubo_furto" style="color: white;margin-right:  5px;" >Roubo ou Furto</label>
+
+            <input type="checkbox" for="aluguel" value="<?= $model->aluguel ?>" id="aluguel" name="aluguel">
+            <label for="aluguel" style="color: white;margin-right:  5px;" >Aluguel</label>
+
+            <input type="checkbox" for="venda" value="<?= $model->venda ?>" id="venda" name="venda">
+            <label for="venda" style="color: white;margin-right:  5px;" >Venda</label>
+
+            <input type="checkbox" for="particular" value="<?= $model->particular ?>" id="particular" name="particular">
+            <label for="particular" style="color: white;margin-right:  5px;" >Particular</label>
 
             </div>
+
+            
+            <div style="margin-top: 5px;margin-bottom: 5px;">
+            <label for="observacoes" style="color: white;margin-right: 5px;">Observações:</label>
+            </div>
+            <div style="display: flex;">
+            <textarea for="observacoes" value="<?= $model->observacoes ?>" id="observacoes" name="observacoes" style="height: 60px; width: 600px;" ></textarea>
+            
+            <button type="submit"  style="background-color:#484d50 ;  height:60px; width:80px; font-size:17px;color:red;margin-left:15px;margin-top: 3px;background-color: grey;"><b>Enviar</b></button>
+            </div>
+            
             <br>
-            <button type="submit"  style="background-color:#484d50 ;  height:35px; width:65px; font-size:17px;color:white">Enviar</button>
+            
         </fieldset>
 
         
     </form>   
 
-    <br>
-    <center><a href="/carros"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Ver listagem de Carros</button></a></center>
     
-    <a href="/"><button style="height: 70px; width:300px; font-size:25px; background-color:#484d50;border: 1 solid black; position: absolute;
+    <center><a href="/carros"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white; margin:15px" >Ver listagem de Carros</button></a></center>
+    
+    <a href="/"><button style="height: 70px; width:300px; font-size:25px; background-color:#484d50;border: 1 solid black;
     bottom: 0;
     width: 99%;
     height: 100px;    
