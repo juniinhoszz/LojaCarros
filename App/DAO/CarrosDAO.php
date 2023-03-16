@@ -21,7 +21,7 @@ class CarrosDAO extends DAO
     {
         // Trecho de código SQL com marcadores ? para substituição posterior, no prepare   
         $sql = "INSERT INTO veiculo 
-                (id_marca, modelo, id_fabricante, id_tipo, ano, id_combustivel, cor, numero_chassi,
+                (marca, modelo, id_fabricante, id_tipo, ano, id_combustivel, cor, numero_chassi,
                 kilometragem, revisao, sinistro, roubo_furto, aluguel, venda, particular, observacoes) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         
@@ -35,7 +35,7 @@ class CarrosDAO extends DAO
         // determinada posição, ou seja, o valor que está em 3, será trocado pelo terceiro ?
         // No que o bindValue está recebendo o model que veio via parâmetro e acessamos
         // via seta qual dado do model queremos pegar para a posição em questão.
-        $stmt->bindValue(1, $model->id_marca);
+        $stmt->bindValue(1, $model->marca);
         $stmt->bindValue(2, $model->modelo);
         $stmt->bindValue(3, $model->id_fabricante);
         $stmt->bindValue(4, $model->id_tipo);
@@ -67,16 +67,6 @@ class CarrosDAO extends DAO
         $stmt->execute();
 
         return $stmt->fetchAll();
-    }
-
-    public function selectMarca()
-    {
-        $sql = "SELECT * FROM marca ";
-
-        $stmt = $this->conexao->prepare($sql);
-        $stmt->execute();
-
-        return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
 
     public function selectFabr()
@@ -112,11 +102,11 @@ class CarrosDAO extends DAO
 
     public function update(CarrosModel $model)
     {
-        $sql = "UPDATE veiculo SET id_marca=? modelo=? id_fabricante=? id_tipo=? ano=? id_combustivel==? cor=? numero_chassi=?
+        $sql = "UPDATE veiculo SET marca=? modelo=? id_fabricante=? id_tipo=? ano=? id_combustivel==? cor=? numero_chassi=?
         kilometragem=? revisao=? sinistro=? roubo_furto=? aluguel=? venda=? particular=? observacoes=? WHERE id=? ";
 
         $stmt = $this->conexao->prepare($sql);
-        $stmt->bindValue(1, $model->id_marca);
+        $stmt->bindValue(1, $model->marca);
         $stmt->bindValue(2, $model->modelo);
         $stmt->bindValue(3, $model->id_fabricante);
         $stmt->bindValue(4, $model->id_tipo);

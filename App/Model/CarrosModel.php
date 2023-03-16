@@ -5,7 +5,7 @@ use App\DAO\CarrosDAO;
 
 class CarrosModel extends Model
 {
-    public $id, $id_marca, $modelo, $id_fabricante, $id_tipo, $ano, $id_combustivel, $cor, $numero_chassi; 
+    public $id, $marca, $modelo, $id_fabricante, $id_tipo, $ano, $id_combustivel, $cor, $numero_chassi; 
     public $kilometragem, $revisao, $sinistro, $roubo_furto, $aluguel, $venda, $particular, $observacoes;
     
 
@@ -31,15 +31,6 @@ class CarrosModel extends Model
         $dao = new CarrosDAO();
 
         $this->rows = $dao->select();
-    }
-
-    public function getAllRowsMarca()
-    {
-
-        $dao = new CarrosDAO();
-
-        $this->rowsMarca = $dao->selectMarca();
-        return $this->rowsMarca;
     }
 
     public function getAllRowsFabr()

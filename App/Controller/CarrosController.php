@@ -28,7 +28,6 @@ class CarrosController extends Controller
             $model = $model->getById( (int) $_GET['id']); // Typecast e obtendo o model preenchido vindo da DAO.
             // Para saber mais sobre Typecast, leia: https://tiago.blog.br/type-cast-ou-conversao-de-tipos-do-php-isso-pode-te-ajudar-muito/
         
-        $model->getAllRowsMarca();
         $model->getAllRowsFabr();
         $model->getAllRowsTipo();
         $model->getAllRowsComb();
@@ -43,11 +42,18 @@ class CarrosController extends Controller
     public static function save() 
     {
 
+        //var_dump($_POST);
+
+        //exit;
+
         $carro = new CarrosModel();
+
+
+        //$carro->aluguel = isset($_POST['aluguel']) ? true : false;
 
         
         $carro->id = $_POST['id'];
-        $carro->id_marca = $_POST['id_marca'];
+        $carro->marca = $_POST['marca'];
         $carro->modelo = $_POST['modelo'];
         $carro->id_fabricante = $_POST['id_fabricante'];
         $carro->id_tipo = $_POST['id_tipo'];
@@ -56,13 +62,12 @@ class CarrosController extends Controller
         $carro->cor = $_POST['cor'];
         $carro->numero_chassi = $_POST['numero_chassi'];
         $carro->kilometragem = $_POST['kilometragem'];
-        $carro->revisao = $_POST['revisao'];
-        $carro->modelo = $_POST['modelo'];
-        $carro->sinistro = $_POST['sinistro'];
-        $carro->roubo_furto = $_POST['roubo_furto'];
-        $carro->aluguel = $_POST['aluguel'];
-        $carro->venda = $_POST['venda'];
-        $carro->particular = $_POST['particular'];
+        $carro->revisao = isset($_POST['revisao']) ? true : false;
+        $carro->modelo = isset($_POST['modelo']) ? true : false;
+        $carro->sinistro = isset($_POST['sinistro']) ? true : false;
+        $carro->roubo_furto = isset($_POST['roubo_furto']) ? true : false;
+        $carro->aluguel = isset($_POST['aluguel']) ? true : false;
+        $carro->particular = isset($_POST['particular']) ? true : false;
         $carro->observacoes = $_POST['observacoes'];
         
         

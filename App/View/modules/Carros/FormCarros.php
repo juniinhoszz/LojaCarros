@@ -22,14 +22,7 @@
             <input type="text" for="id" disabled value="<?= $model->id ?>" name="id" />
 
             <label for="marca" style="color: white;">Marca:</label>
-            <select name="marca" id="marca" style="background:#484d50; color:white; height:25px;">
-            <option selected value="">Selecione uma Opção</option>
-            <?php foreach($model->rowsMarca as $item): ?>
-
-            <option value="<?= $item->id ?> "><?= $item->descricao ?></option>
-
-            <?php endforeach ?>
-            </select>
+            <input type="text" for="marca" value="<?= $model->marca ?>" name="marca" />
 
             <label for="modelo" style="color: white;">Modelo:</label>
             <input type="text" for="modelo" value="<?= $model->modelo ?>" name="modelo" />
@@ -39,7 +32,7 @@
             <option selected value="">Selecione uma Opção</option>
             <?php foreach($model->rowsFabr as $item): ?>
 
-            <option value="<?= $item->id ?> "><?= $item->descricao ?></option>
+            <option value="<?= $item->id ?>"><?= $item->descricao ?></option>
 
             <?php endforeach ?>
             </select>
@@ -49,7 +42,7 @@
             <option selected value="">Selecione uma Opção</option>
             <?php foreach($model->rowsTipo as $item): ?>
 
-            <option value="<?= $item->id ?> "><?= $item->descricao ?></option>
+            <option value="<?= $item->id ?>"><?= $item->descricao ?></option>
 
             <?php endforeach ?>
             </select><br>
@@ -59,12 +52,10 @@
             
             <label for="combustivel" style="color: white;">Combustivel:</label>
             <select name="combustivel" id="combustivel" style="background:#484d50; color:white; height:25px;">
-            <option selected value="">Selecione uma Opção</option>
-            <?php foreach($model->rowsComb as $item): ?>
-
-            <option value="<?= $item->id ?> "><?= $item->descricao ?></option>
-
-            <?php endforeach ?>
+                <option selected value="">Selecione uma Opção</option>
+                <?php foreach($model->rowsComb as $item): ?>
+                <option value="<?= $item->id ?>"><?= $item->descricao ?></option>
+                <?php endforeach ?>
             </select>
 
             <label for="cor" style="color: white;">Cor:</label>

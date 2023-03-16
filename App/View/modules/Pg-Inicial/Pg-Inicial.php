@@ -13,8 +13,6 @@
 
 <center><a href="/carros/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Cadastrar Carro</button></a></center><br>
 <center><a href="/carros"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Carros Cadastrados</button></a></center><br><br>
-<center><a href=""><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Cadastrar Moto</button></a></center><br>
-<center><a href=""><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Motos Cadastradas</button></a></center><br>
 <br>
 
 
