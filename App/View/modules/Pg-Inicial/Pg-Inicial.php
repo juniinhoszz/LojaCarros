@@ -11,8 +11,8 @@
 
 <center><h1 align="center" style="color:white">Página Inicial - Loja de Carros<h2 style="color:white">Selecione uma opção:</h2></h1></center>
 
-<center><a href="/carros/form"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Cadastrar Carro</button></a></center><br>
-<center><a href="/carros"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white" >Carros Cadastrados</button></a></center><br><br>
+<center><a href="/carros/form"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white" >Cadastrar Carro</button></a></center><br>
+<center><a href="/carros"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white" >Carros Cadastrados</button></a></center><br><br>
 <br>
 
 

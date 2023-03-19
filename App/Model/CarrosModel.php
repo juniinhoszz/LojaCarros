@@ -6,7 +6,7 @@ use App\DAO\CarrosDAO;
 class CarrosModel extends Model
 {
     public $id, $marca, $modelo, $id_fabricante, $id_tipo, $ano, $id_combustivel, $cor, $numero_chassi; 
-    public $kilometragem, $revisao, $sinistro, $roubo_furto, $aluguel, $venda, $particular, $observacoes;
+    public $kilometragem, $revisao, $sinistro, $roubo_furto, $aluguel, $venda, $particular, $observacoes, $data_cadastro;
     
 
     public function save()

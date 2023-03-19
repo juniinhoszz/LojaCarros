@@ -28,6 +28,10 @@ switch($parse_uri) {
         CarrosController::delete();
     break;
 
+     case "/carros/sucesso":
+        include 'View/modules/Carros/SucessCarros.php';
+    break;
+
     default:
         header("Location: /");
     break;

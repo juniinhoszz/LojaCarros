@@ -62,18 +62,18 @@ class CarrosController extends Controller
         $carro->cor = $_POST['cor'];
         $carro->numero_chassi = $_POST['numero_chassi'];
         $carro->kilometragem = $_POST['kilometragem'];
-        $carro->revisao = isset($_POST['revisao']) ? true : false;
-        $carro->modelo = isset($_POST['modelo']) ? true : false;
-        $carro->sinistro = isset($_POST['sinistro']) ? true : false;
-        $carro->roubo_furto = isset($_POST['roubo_furto']) ? true : false;
-        $carro->aluguel = isset($_POST['aluguel']) ? true : false;
-        $carro->particular = isset($_POST['particular']) ? true : false;
+        $carro->revisao = isset($_POST['revisao']) ? 1 : 0;
+        $carro->sinistro = isset($_POST['sinistro']) ? 1 : 0;
+        $carro->roubo_furto = isset($_POST['roubo_furto']) ? 1 : 0;
+        $carro->aluguel = isset($_POST['aluguel']) ? 1 : 0;
+        $carro->venda = isset($_POST['venda']) ? 1 : 0;
+        $carro->particular = isset($_POST['particular']) ? 1 : 0;
         $carro->observacoes = $_POST['observacoes'];
         
         
         $carro->save(); 
 
-        header("Location: /veiculo"); 
+        header("Location: /carros/sucesso"); 
     }
 
     public static function delete()

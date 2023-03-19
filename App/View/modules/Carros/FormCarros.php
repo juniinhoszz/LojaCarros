@@ -18,8 +18,8 @@
             <legend style="color: white;"><b>Cadastro de Carros</b></legend>
             
             
-            <label for="id" style="color: white;">ID do veiculo:</label>
-            <input type="text" for="id" disabled value="<?= $model->id ?>" name="id" />
+            <!--<label for="id" style="color: white;">ID do veiculo:</label> -->
+            <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="marca" style="color: white;">Marca:</label>
             <input type="text" for="marca" value="<?= $model->marca ?>" name="marca" />
@@ -27,8 +27,8 @@
             <label for="modelo" style="color: white;">Modelo:</label>
             <input type="text" for="modelo" value="<?= $model->modelo ?>" name="modelo" />
 
-            <label for="fabricante" style="color: white;">Fabricante:</label>
-            <select name="fabricante" id="fabricante" style="background:#484d50; color:white; height:25px;">
+            <label for="id_fabricante" style="color: white;">Fabricante:</label>
+            <select name="id_fabricante" id="id_fabricante" style="background:#484d50; color:white; height:25px;">
             <option selected value="">Selecione uma Opção</option>
             <?php foreach($model->rowsFabr as $item): ?>
 
@@ -37,8 +37,8 @@
             <?php endforeach ?>
             </select>
 
-            <label for="tipo" style="color: white;">Tipo:</label>
-            <select name="tipo" id="tipo" style="background:#484d50; color:white; height:25px;">
+            <label for="id_tipo" style="color: white;">Tipo:</label>
+            <select name="id_tipo" id="id_tipo" style="background:#484d50; color:white; height:25px;">
             <option selected value="">Selecione uma Opção</option>
             <?php foreach($model->rowsTipo as $item): ?>
 
@@ -50,8 +50,8 @@
             <label for="ano" style="color: white;">Ano:</label>
             <input type="number" min="1950" for="ano" value="<?= $model->ano ?>" name="ano" />
             
-            <label for="combustivel" style="color: white;">Combustivel:</label>
-            <select name="combustivel" id="combustivel" style="background:#484d50; color:white; height:25px;">
+            <label for="id_combustivel" style="color: white;">Combustivel:</label>
+            <select name="id_combustivel" id="id_combustivel" style="background:#484d50; color:white; height:25px;">
                 <option selected value="">Selecione uma Opção</option>
                 <?php foreach($model->rowsComb as $item): ?>
                 <option value="<?= $item->id ?>"><?= $item->descricao ?></option>
@@ -97,12 +97,12 @@
             <label for="observacoes" style="color: white;margin-right: 5px;">Observações:</label>
             </div>
             <div style="display: flex;">
-            <textarea for="observacoes" value="<?= $model->observacoes ?>" id="observacoes" name="observacoes" style="height: 60px; width: 600px;" ></textarea>
+            <textarea for="observacoes" value="<?= $model->observacoes ?>" id="observacoes" name="observacoes" style="height: 65px; width: 600px;" ></textarea>
             
-            <button type="submit"  style="background-color:#484d50 ;  height:60px; width:80px; font-size:17px;color:red;margin-left:15px;margin-top: 3px;background-color: grey;"><b>Enviar</b></button>
+            <button type="submit"  style="background-color:#484d50 ;  height:70px; width:100px; font-size:17px;color:red;margin-left:15px;margin-top: px;background-color: grey;"><b>Enviar</b></button>
             </div>
             
-            <br>
+            
             
         </fieldset>
 
