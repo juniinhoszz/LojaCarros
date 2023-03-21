@@ -102,8 +102,9 @@ class CarrosDAO extends DAO
 
     public function update(CarrosModel $model)
     {
-        $sql = "UPDATE veiculo SET marca=? modelo=? id_fabricante=? id_tipo=? ano=? id_combustivel==? cor=? numero_chassi=?
-        kilometragem=? revisao=? sinistro=? roubo_furto=? aluguel=? venda=? particular=? observacoes=? WHERE id=? ";
+        $sql = "UPDATE veiculo SET marca=?, modelo=?, id_fabricante=?, id_tipo=?, ano=?, id_combustivel=?, cor=?, numero_chassi=?,
+        kilometragem=?, revisao=?, sinistro=?, roubo_furto=?, aluguel=?, venda=?, particular=?, observacoes=? WHERE id=?";
+
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model->marca);

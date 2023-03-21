@@ -20,7 +20,7 @@
         <tr>
 
             <th style="font-size:15px">❌</th>
-            <!--<th style="font-size:15px">✏️</th>-->
+            <th style="font-size:15px">✏️</th>
             <th style="color:white">ID</th>
             <th style="color:white">Marca</th>
             <th style="color:white">Modelo</th>
@@ -45,8 +45,8 @@
         <?php foreach($model->rows as $item): ?>
     <tr>
     
-        <td> <a style="text-decoration: none; color:#30a7d7;" href="/carros/delete?id=<?= $item['id'] ?>">❌</a></td>
-        <!--<td> <a style="text-decoration: none; color:#30a7d7;" href="/carros/form?id=<?= $item['id'] ?>">✏️​</a></td>-->
+        <td> <a style="text-decoration: none; color:#30a7d7;" href="/carros/delete?id=<?= $item['id'] ?>"><center>❌</center></a></td>
+        <td> <a style="text-decoration: none; color:#30a7d7;" href="/carros/form?id=<?= $item['id'] ?>"><center>✏️</center></a></td>
         <td style="color:white"><center><b><?= $item['id'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['marca'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['modelo'] ?></b></center></td>

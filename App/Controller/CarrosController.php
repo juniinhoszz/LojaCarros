@@ -31,6 +31,7 @@ class CarrosController extends Controller
         $model->getAllRowsFabr();
         $model->getAllRowsTipo();
         $model->getAllRowsComb();
+        $model->getAllRows();
         
 
 
