@@ -61,7 +61,7 @@ class CarrosController extends Controller
         $carro->ano = $_POST['ano'];
         $carro->id_combustivel = $_POST['id_combustivel'];
         $carro->cor = $_POST['cor'];
-        $carro->numero_chassi = $_POST['numero_chassi'];
+        $carro->Numero_chassi = $_POST['Numero_chassi'];
         $carro->kilometragem = $_POST['kilometragem'];
         $carro->revisao = isset($_POST['revisao']) ? 1 : 0;
         $carro->sinistro = isset($_POST['sinistro']) ? 1 : 0;

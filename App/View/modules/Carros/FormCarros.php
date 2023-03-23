@@ -58,7 +58,7 @@
             <input type="text" for="cor" value="<?= $model->cor ?>" name="cor" />
 
             <label for="numero_chassi" style="color: white;">Numero de Chassi:</label>
-            <input type="text" for="numero_chassi" value="<?= $model->Numero_chassi ?>" name="numero_chassi" />
+            <input type="text" for="numero_chassi" value="<?= $model->Numero_chassi ?>" name="Numero_chassi" />
 
             <label for="kilometragem" style="color: white;">Kilometragem:</label>
             <input type="number" for="kilometragem" value="<?= $model->kilometragem ?>" name="kilometragem" />
@@ -71,7 +71,7 @@
             <input type="checkbox" <?= ($model->revisao == '1') ? 'checked' : '' ?> for="revisao" value="<?= $model->revisao ?>" id="revisao" name="revisao" >
             <label for="revisao" style="color: white;margin-right:  5px;" >Revisão</label>
 
-            <input type="checkbox" <?= ($model->sinistro == '1') ? 'checked' : '' ?> for="sinistro" value="<?= $model->sinistro ?>" id="sinistro" name="sinistro">
+            <input type="checkbox" <?= ($model->sinistro == '1') ? 'checked' : '' ?> for="sinistro"  id="sinistro" name="sinistro">
             <label for="sinistro" style="color: white; margin-right:  5px;" >Sinistro</label>
 
             <input type="checkbox" <?= ($model->roubo_furto == '1') ? 'checked' : '' ?> for="roubo_furto" value="<?= $model->roubo_furto ?>" id="roubo_furto" name="roubo_furto">

@@ -21,7 +21,7 @@ class CarrosDAO extends DAO
     {
         // Trecho de código SQL com marcadores ? para substituição posterior, no prepare   
         $sql = "INSERT INTO veiculo 
-                (marca, modelo, id_fabricante, id_tipo, ano, id_combustivel, cor, numero_chassi,
+                (marca, modelo, id_fabricante, id_tipo, ano, id_combustivel, cor, Numero_chassi,
                 kilometragem, revisao, sinistro, roubo_furto, aluguel, venda, particular, observacoes) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         
@@ -42,7 +42,7 @@ class CarrosDAO extends DAO
         $stmt->bindValue(5, $model->ano);
         $stmt->bindValue(6, $model->id_combustivel);
         $stmt->bindValue(7, $model->cor);
-        $stmt->bindValue(8, $model->numero_chassi);
+        $stmt->bindValue(8, $model->Numero_chassi);
         $stmt->bindValue(9, $model->kilometragem);
         $stmt->bindValue(10, $model->revisao);
         $stmt->bindValue(11, $model->sinistro);
@@ -102,7 +102,7 @@ class CarrosDAO extends DAO
 
     public function update(CarrosModel $model)
     {
-        $sql = "UPDATE veiculo SET marca=?, modelo=?, id_fabricante=?, id_tipo=?, ano=?, id_combustivel=?, cor=?, numero_chassi=?,
+        $sql = "UPDATE veiculo SET marca=?, modelo=?, id_fabricante=?, id_tipo=?, ano=?, id_combustivel=?, cor=?, Numero_chassi=?,
         kilometragem=?, revisao=?, sinistro=?, roubo_furto=?, aluguel=?, venda=?, particular=?, observacoes=? WHERE id=?";
 
 
@@ -114,7 +114,7 @@ class CarrosDAO extends DAO
         $stmt->bindValue(5, $model->ano);
         $stmt->bindValue(6, $model->id_combustivel);
         $stmt->bindValue(7, $model->cor);
-        $stmt->bindValue(8, $model->numero_chassi);
+        $stmt->bindValue(8, $model->Numero_chassi);
         $stmt->bindValue(9, $model->kilometragem);
         $stmt->bindValue(10, $model->revisao);
         $stmt->bindValue(11, $model->sinistro);
