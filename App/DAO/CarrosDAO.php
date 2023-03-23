@@ -61,7 +61,16 @@ class CarrosDAO extends DAO
 
     public function select()
     {
-        $sql = "SELECT * FROM veiculo ";
+        $sql = "SELECT v.*,
+                f.descricao as nome_fabricante,
+                c.descricao as nome_combustivel,
+                t.descricao as nome_tipo
+                from veiculo v
+                join fabricante f on f.id = v.id_fabricante
+                join combustivel c on c.id = v.id_combustivel
+                join tipo t on t.id = v.id_tipo
+                ";
+
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();

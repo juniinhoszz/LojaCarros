@@ -50,10 +50,10 @@
         <td style="color:white"><center><b><?= $item['id'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['marca'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['modelo'] ?></b></center></td>
-        <td style="color:white"><center><b><?= $item['id_fabricante'] ?></b></center></td>
-        <td style="color:white"><center><b><?= $item['id_tipo'] ?></b></center></td>
+        <td style="color:white"><center><b><?= $item['nome_fabricante'] ?></b></center></td>
+        <td style="color:white"><center><b><?= $item['nome_tipo'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['ano'] ?></b></center></td>
-        <td style="color:white"><center><b><?= $item['id_combustivel'] ?></b></center></td>
+        <td style="color:white"><center><b><?= $item['nome_combustivel'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['cor'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['Numero_chassi'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['kilometragem'] ?></b></center></td>

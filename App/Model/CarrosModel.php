@@ -7,6 +7,7 @@ class CarrosModel extends Model
 {
     public $id, $marca, $modelo, $id_fabricante, $id_tipo, $ano, $id_combustivel, $cor, $Numero_chassi; 
     public $kilometragem, $revisao, $sinistro, $roubo_furto, $aluguel, $venda, $particular, $observacoes, $data_cadastro;
+    public $nome_fabricante, $nome_combustivel, $nome_tipo;
     
 
     public function save()
