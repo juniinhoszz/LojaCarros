@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS `LojaCarros`.`veiculo` (
   `venda` TINYINT NULL,
   `particular` TINYINT NULL,
   `observacoes` VARCHAR(300) NULL,
+  `horario_cadastro` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 

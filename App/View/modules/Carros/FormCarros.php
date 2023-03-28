@@ -93,7 +93,7 @@
             <label for="observacoes" style="color: white;margin-right: 5px;">Observações:</label>
             </div>
             <div style="display: flex;">
-            <textarea for="observacoes"  id="observacoes" name="observacoes" style="height: 65px; width: 600px;" ><?= $model->observacoes ?></textarea>
+            <textarea for="observacoes" maxlength="300" id="observacoes" name="observacoes" style="height: 65px; width: 600px;" ><?= $model->observacoes ?></textarea>
             
             <button type="submit" style="background-color:#484d50 ;  height:70px; width:100px; font-size:17px;color:red;margin-left:15px;margin-top: px;background-color: grey;"><b>Enviar</b></button>
             </div>

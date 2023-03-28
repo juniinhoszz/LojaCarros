@@ -56,7 +56,7 @@
         <td style="color:white"><center><b><?= $item['nome_combustivel'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['cor'] ?></b></center></td>
         <td style="color:white"><center><b><?= $item['Numero_chassi'] ?></b></center></td>
-        <td style="color:white"><center><b><?= $item['kilometragem'] ?></b></center></td>
+        <td style="color:white"><center><b><?= str_replace(',', '.', number_format($item['kilometragem'])) ?> KM</b></center></td>
 
         <td style="color:white"><center><b>
         <?php if ($item['revisao'] == 1): ?> Sim <?php else: ?> Não <?php endif ?> </b></center></td>
