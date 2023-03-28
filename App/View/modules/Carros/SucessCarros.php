@@ -8,7 +8,7 @@
     <style>
         body{
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #2e2e2e;
+        background-color: black;
     }
     </style>
 </head>
@@ -17,14 +17,14 @@
     <div style="align-self: center;display: flex;
         flex-direction: row;justify-content: center;
         align-items: center;margin: 20px;">
-    <div style="background-color: #0f0f0f;width: 500px; height: 500px;">
+    <div style="background-color: #0f0f0f;width: 500px; height: 500px;border-radius: 10px;">
         <center><label style="font-size: 40px;color:white; margin: 10px;align-self: center;display: flex;
         flex-direction: row;justify-content: center;
         align-items: center;">Automóvel Cadastrado com sucesso!</label></center>
 
-        <center><a href="/carros/form"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white;margin-top: 5px;" >Cadastrar mais Carros</button></a></center><br>
-        <center><a href="/carros"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white" >Consultar Carros Cadastrados</button></a></center><br>
-        <center><a href="/"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white" >Voltar a Página Inicial</button></a></center><br>
+        <center><a href="/carros/form"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;border-radius: 10px;color:white;margin-top: 5px;" >Cadastrar mais Carros</button></a></center><br>
+        <center><a href="/carros"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;border-radius: 10px;color:white" >Consultar Carros Cadastrados</button></a></center><br>
+        <center><a href="/"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;border-radius: 10px;color:white" >Voltar a Página Inicial</button></a></center><br>
 </div>
 </div>
 

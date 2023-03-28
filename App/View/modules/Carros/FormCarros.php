@@ -58,7 +58,7 @@
             <input type="text" for="cor" value="<?= $model->cor ?>" name="cor" />
 
             <label for="numero_chassi" style="color: white;">Numero de Chassi:</label>
-            <input type="text" for="numero_chassi" value="<?= $model->Numero_chassi ?>" name="Numero_chassi" />
+            <input type="text" for="numero_chassi" maxlength="17" value="<?= $model->Numero_chassi ?>" name="Numero_chassi" />
 
             <label for="kilometragem" style="color: white;">Kilometragem:</label>
             <input type="number" for="kilometragem" value="<?= $model->kilometragem ?>" name="kilometragem" />
@@ -106,9 +106,9 @@
     </form>   
 
     
-    <center><a href="/carros"><button style="height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white; margin:15px" >Ver listagem de Carros</button></a></center>
+    <center><a href="/carros"><button style="border-radius: 10px;height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white; margin:15px" >Ver listagem de Carros</button></a></center>
     
-    <a href="/"><button style="height: 70px; width:300px; font-size:25px; background-color:#484d50;border: 1 solid black;
+    <a href="/"><button style="border-radius: 10px;height: 70px; width:300px; font-size:25px; background-color:#484d50;border: 1 solid black;
     bottom: 0;
     width: 99%;
     height: 100px;    
@@ -117,7 +117,7 @@
     
     <style>
         body{
-            background-color: #2e2e2e;
+            background-color: black;
         }
         
 

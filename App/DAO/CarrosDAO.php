@@ -69,6 +69,7 @@ class CarrosDAO extends DAO
                 join fabricante f on f.id = v.id_fabricante
                 join combustivel c on c.id = v.id_combustivel
                 join tipo t on t.id = v.id_tipo
+                order by v.id
                 ";
 
 

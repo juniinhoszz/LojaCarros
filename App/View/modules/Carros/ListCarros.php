@@ -9,14 +9,14 @@
     <style>
         body{
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #2E2E2E;
+        background-color: black;
     }
     </style>
     
 </head>
 <body>
     <h1 align="center" style="color:white;">Carros Cadastrados</h1>
-    <table id="tabela" width="100%" border="black 1" bgcolor="#0f0f0f">
+    <table id="tabela" width="100%" border="black 1" bgcolor="#2e2e2e">
         <tr>
 
             <th style="font-size:15px">❌</th>
@@ -97,6 +97,16 @@
         <?php endif ?>
 
 </table>
+
+<center><a href="/carros/form"><button style="border-radius: 10px;height: 85px; width:350px; font-size:25px; background-color:#484d50;border: 1 solid black;color:white; margin:15px" >Cadastrar mais Carros</button></a></center>
+    
+    <a href="/"><button style="border-radius: 10px;height: 70px; width:300px; font-size:25px; background-color:#484d50;border: 1 solid black;
+    bottom: 0;
+    width: 99%;
+    height: 100px;    
+    text-align: center;
+    position: absolute;
+    line-height: 100px;color:white" >Voltar para página inicial</button></a>
     
 </body>
 </html>
