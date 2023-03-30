@@ -44,7 +44,7 @@
             </select><br>
             
             <label for="ano" style="color: white;">Ano:</label>
-            <input type="number" min="1950" for="ano" value="<?= $model->ano ?>" name="ano" />
+            <input type="number" min="1950" maxlength="4" for="ano" value="<?= $model->ano ?>" name="ano" />
             
             <label for="id_combustivel" style="color: white;">Combustivel:</label>
             <select name="id_combustivel" id="id_combustivel" style="background:#484d50; color:white; height:25px;">
