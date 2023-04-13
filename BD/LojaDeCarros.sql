@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `LojaCarros`.`veiculo` (
   `ano` CHAR(4) NOT NULL,
   `id_combustivel` INT NOT NULL,
   `cor` VARCHAR(45) NOT NULL,
-  `Numero_chassi` INT NOT NULL,
+  `Numero_chassi` CHAR(17) NOT NULL,
   `kilometragem` DOUBLE NOT NULL,
   `revisao` TINYINT NULL,
   `sinistro` TINYINT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `LojaCarros`.`veiculo` (
   `venda` TINYINT NULL,
   `particular` TINYINT NULL,
   `observacoes` VARCHAR(300) NULL,
-  `horario_cadastro` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  `data_cadastro` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 

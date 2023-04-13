@@ -80,7 +80,7 @@
         <?php if ($item['observacoes'] == ""): ?> Sem Observações<?php else: ?> <?= $item['observacoes'] ?> <?php endif ?> 
         </b></center></td>
 
-        <td style="color:white"><center><b><?= $item['horario_cadastro'] ?></b></center></td>
+        <td style="color:white"><center><b><?= $item['data_cadastro'] ?></b></center></td>
         
         
         
