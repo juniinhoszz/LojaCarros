@@ -15,14 +15,19 @@
 
 <center><img src="/View/img/LOGO.png" height="300"></center>
 
-<br>
+
 <center><h2 style="color:white">Selecione uma opção:</h2></center>
 
 <center><div style="display: block;">
 <a href="/carros/form"><button style="border-radius: 10px;height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white; margin-right: 10px;" >Cadastrar Carro</button></a>
 <a href="/carros"><button style="border-radius: 10px;height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white" >Carros Cadastrados</button></a>
+
 </div></center>
-<br>
+<center><div style="display: block;margin-top: 10px;">
+<a href="/exportar"><button style="border-radius: 10px;height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white" >Realizar um Backup</button></a>
+<a href="/importar"><button style="border-radius: 10px;height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;color:white" >Restaurar Backup</button></a>
+
+</div></center><br>
 
 
 <style>
