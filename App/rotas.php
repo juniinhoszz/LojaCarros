@@ -1,23 +1,20 @@
 <?php
 use App\Controller\{
     CarrosController,
-    WelcomeController
+    BackupController
 };
 
 $parse_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($parse_uri) {
 
-    // Fazendo a função de exportar Banco de Dados / Fazer dps a função de restaurar Banco de Dados
+    // Fazendo a função de exportar Banco de Dados / função de restaurar Banco de Dados
     case '/exportar':
-        $return_var = NULL;
-        $output = NULL;
-        $command = 'C:/"Program Files"/MySQL/"MySQL Server 8.0"/bin/mysqldump -u root -p etecjau -P 3307 -h localhost db_bancodigital > C:/Dev/file.sql';
-        exec($command, $output, $exit_code);
+        BackupController::exportar();
+    break;
 
-        var_dump($exit_code);
-
-        echo "deu certo.";
+    case '/importar':
+        BackupController::importar();
     break;
 
     case "/":
