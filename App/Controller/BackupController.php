@@ -19,12 +19,11 @@ class BackupController extends Controller
     }
     public static function importar()
     {
-        //fazer IMPORTAR
-        exec('cd C:\"Program Files"\MySQL\"MySQL Server 8.0"\bin
-        mysql -hlocalhost -P3307 -uroot -petecjau < C:/Dev/BackupLojaCarros.sql');
-
-        //cd C:\"Program Files"\MySQL\"MySQL Server 8.0"\bin\mysql -hlocalhost -P3307 -uroot -petecjau < C:/Dev/BackupLojaCarros.sql
-        //exec(BASEDIR . '/App/Backup/import.bat');
-        header('Location: /');
+        
+        $command = '"C:/Program Files/MySQL/MySQL Server 8.0/bin/mysql" -uroot -petecjau -P3307 -hlocalhost lojacarros < C:/Dev/BackupLojaCarros.sql'; 
+        exec($command);
+        
+        include 'View/modules/Pg-Inicial/SucessImportar.php';
+        //header('Location: /');
     }
 }

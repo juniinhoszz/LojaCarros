@@ -20,7 +20,7 @@
     <div style="background-color: #0f0f0f;width: 500px; height: 500px;border-radius: 10px;">
         <center><label style="font-size: 40px;color:white; margin: 10px;align-self: center;display: flex;
         flex-direction: row;justify-content: center;
-        align-items: center;">Restauração de Banco de Dados Realizada com sucesso!</label></center>
+        align-items: center;">Backup Realizado com sucesso!</label></center>
 
         
         <center><a href="/"><button style="height: 100px; width:400px; font-size:30px; background-color:#484d50;border: 1 solid black;border-radius: 10px;color:white" >Retornar a Página Inicial</button></a></center><br>
